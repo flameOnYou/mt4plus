@@ -10,5 +10,17 @@
             }
         ],
         "market": "SH"
+    },
+     {
+        "remarks": "shenzhesn",
+        "symbols": [
+            {
+                "coreId": "600001",
+                "blue": "205",
+                "green": "150",
+                "red": "205"
+            }
+        ],
+        "market": "SH"
     }
 ]

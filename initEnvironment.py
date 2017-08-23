@@ -142,3 +142,5 @@ def initFunc():
         
         create_groups(grp_name,grp_Desc)
         CreateSymbols(sym_name,sym_group,sym_Color)
+if __name__ == '__main__':
+    initFunc()

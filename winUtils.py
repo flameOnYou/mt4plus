@@ -60,7 +60,6 @@ def gbk2utf8(s):
 """
 
 def updateCharts():
-    print "update dll ================"
     classname = "MetaQuotes::MetaTrader::4.00"
     titlename = ""
     #获取句柄
@@ -83,10 +82,6 @@ def updateCharts():
         clsname = win32gui.GetClassName(GuiCharts)  
         if clsname == "MDIClient":
             MDIClient = GuiCharts
-            print '窗口句柄:%s ' % (GuiCharts)  
-            print '窗口标题:%s' % (GuiCharts)  
-            print '窗口类名:%s' % (GuiCharts)  
-            print ''
 
     # 查找图表所有子窗口
     charts_list = []
@@ -99,8 +94,10 @@ def updateCharts():
         title = gbk2utf8(win32gui.GetWindowText(charts_hwnd))
         clsname = win32gui.GetClassName(charts_hwnd)
         WM_COMMAND = 0x0111
-        win32api.PostMessage(charts_hwnd,WM_COMMAND,33324,0)
+        
         if "Afx:" in clsname:
-            print '窗口标题:%s' % (title)
+            win32api.PostMessage(charts_hwnd,WM_COMMAND,33324,0)
+            charts_hwnd = 0
+            print 'PostMessage :%s' % (title)
 if __name__ == '__main__':
     updateCharts()

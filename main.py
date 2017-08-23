@@ -139,7 +139,7 @@ def updateChartTest(filename):
                 priceStruc.low = price_now
             priceStruc.close = price_now
             hstutils.updateStruct(filename, priceStruc)
-        winUtils.updateCharts()
+#         winUtils.updateCharts()
         # print "当前价格:",price_now
         time.sleep(1)
 
@@ -207,28 +207,24 @@ def startChartRun(symbol,period):
     # 更新图表
 #     updateChart(filename,symbol)
     updateChartTest(filename)
-    # 刷新MT4界面
-    # winUtils.updateCharts()
-    
+
+"""
+线程分解参数
+"""
+def _chart_run(str):
+    startChartRun(str.split(",")[0],int(str.split(",")[1]))
 """
 启动一个图表数据的实时线程
 """
 def startThread():
     while symbolList:
-#         try:
         code = symbolList.pop()
-#         startChartRun(symbol,period)
-        s = "\r code:"+code+"\r"
         periodList = [5,15,30]
-        period = 0
-        for p in periodList:
-            period = p
-            startChartRun(code,period)
-#         except Exception as exp:
-#             print "error code:",code,"period",period,"exp:",exp
-#             continue
-        
-
+        for period in periodList:
+#             startChartRun(code,period)
+            arg_str = str(code)+","+str(period)
+            t = threading.Thread(target=_chart_run,args=(arg_str,))
+            t.start()
 if __name__ == '__main__':
 # 初始化raw文件
     initEnvironment.initFunc()
