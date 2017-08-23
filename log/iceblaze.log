@@ -1,0 +1,37 @@
+Wed, 23 Aug 2017 00:39:58 connectionpool.py[line:214] INFO Starting new HTTP connection (1): 125.77.254.10
+Wed, 23 Aug 2017 00:39:59 connectionpool.py[line:401] DEBUG "GET /history?symbol=600005&period=5 HTTP/1.1" 200 46470
+Wed, 23 Aug 2017 00:39:59 main.py[line:102] INFO 正在更新文件 ../history/default/6000055.hst
+Wed, 23 Aug 2017 00:39:59 connectionpool.py[line:214] INFO Starting new HTTP connection (1): 125.77.254.10
+Wed, 23 Aug 2017 00:39:59 connectionpool.py[line:401] DEBUG "GET /test HTTP/1.1" 200 59
+Wed, 23 Aug 2017 00:39:59 main.py[line:119] INFO 获取价格 11.50033
+Wed, 23 Aug 2017 00:40:00 connectionpool.py[line:214] INFO Starting new HTTP connection (1): 125.77.254.10
+Wed, 23 Aug 2017 00:40:00 connectionpool.py[line:401] DEBUG "GET /test HTTP/1.1" 200 59
+Wed, 23 Aug 2017 00:40:00 main.py[line:119] INFO 获取价格 14.77274
+Wed, 23 Aug 2017 00:40:01 connectionpool.py[line:214] INFO Starting new HTTP connection (1): 125.77.254.10
+Wed, 23 Aug 2017 00:40:01 connectionpool.py[line:401] DEBUG "GET /test HTTP/1.1" 200 59
+Wed, 23 Aug 2017 00:40:01 main.py[line:119] INFO 获取价格 15.77793
+Wed, 23 Aug 2017 00:40:01 hstutils.py[line:250] INFO updateStruct() filename ../history/default/6000055.hst 
+Wed, 23 Aug 2017 00:40:02 connectionpool.py[line:214] INFO Starting new HTTP connection (1): 125.77.254.10
+Wed, 23 Aug 2017 00:40:02 connectionpool.py[line:401] DEBUG "GET /test HTTP/1.1" 200 59
+Wed, 23 Aug 2017 00:40:02 main.py[line:119] INFO 获取价格 13.04968
+Wed, 23 Aug 2017 00:40:02 hstutils.py[line:250] INFO updateStruct() filename ../history/default/6000055.hst 
+Wed, 23 Aug 2017 00:40:03 connectionpool.py[line:214] INFO Starting new HTTP connection (1): 125.77.254.10
+Wed, 23 Aug 2017 00:40:03 connectionpool.py[line:401] DEBUG "GET /test HTTP/1.1" 200 59
+Wed, 23 Aug 2017 00:40:03 main.py[line:119] INFO 获取价格 10.34416
+Wed, 23 Aug 2017 00:40:03 hstutils.py[line:250] INFO updateStruct() filename ../history/default/6000055.hst 
+Wed, 23 Aug 2017 00:40:04 connectionpool.py[line:214] INFO Starting new HTTP connection (1): 125.77.254.10
+Wed, 23 Aug 2017 00:40:04 connectionpool.py[line:401] DEBUG "GET /test HTTP/1.1" 200 59
+Wed, 23 Aug 2017 00:40:04 main.py[line:119] INFO 获取价格 17.92195
+Wed, 23 Aug 2017 00:40:04 hstutils.py[line:250] INFO updateStruct() filename ../history/default/6000055.hst 
+Wed, 23 Aug 2017 00:40:05 connectionpool.py[line:214] INFO Starting new HTTP connection (1): 125.77.254.10
+Wed, 23 Aug 2017 00:40:05 connectionpool.py[line:401] DEBUG "GET /test HTTP/1.1" 200 59
+Wed, 23 Aug 2017 00:40:05 main.py[line:119] INFO 获取价格 14.77859
+Wed, 23 Aug 2017 00:40:05 hstutils.py[line:250] INFO updateStruct() filename ../history/default/6000055.hst 
+Wed, 23 Aug 2017 00:40:06 connectionpool.py[line:214] INFO Starting new HTTP connection (1): 125.77.254.10
+Wed, 23 Aug 2017 00:40:06 connectionpool.py[line:401] DEBUG "GET /test HTTP/1.1" 200 59
+Wed, 23 Aug 2017 00:40:06 main.py[line:119] INFO 获取价格 14.25078
+Wed, 23 Aug 2017 00:40:06 hstutils.py[line:250] INFO updateStruct() filename ../history/default/6000055.hst 
+Wed, 23 Aug 2017 00:40:07 connectionpool.py[line:214] INFO Starting new HTTP connection (1): 125.77.254.10
+Wed, 23 Aug 2017 00:40:07 connectionpool.py[line:401] DEBUG "GET /test HTTP/1.1" 200 59
+Wed, 23 Aug 2017 00:40:07 main.py[line:119] INFO 获取价格 13.03897
+Wed, 23 Aug 2017 00:40:07 hstutils.py[line:250] INFO updateStruct() filename ../history/default/6000055.hst 

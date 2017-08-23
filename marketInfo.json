@@ -1,0 +1,14 @@
+[
+    {
+        "remarks": "shenzhen",
+        "symbols": [
+            {
+                "coreId": "600005",
+                "blue": "205",
+                "green": "150",
+                "red": "205"
+            }
+        ],
+        "market": "SH"
+    }
+]
